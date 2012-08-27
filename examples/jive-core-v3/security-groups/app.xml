@@ -15,10 +15,9 @@
    - limitations under the License.
   -->
 <Module>
-    <ModulePrefs title="Security Groups Example"
-                author="Jive Software"
-           description="Manage security groups">
-        <Link rel="Icon" href="group-icon.png"/>
+    <ModulePrefs title="AI Deal Room"
+                author="Accenture"
+           description="Deal Room App">
         <Require feature="dynamic-height"/>
         <Require feature="jive-core-v3"/>
         <Require feature="jquery-1.4.2"/>
