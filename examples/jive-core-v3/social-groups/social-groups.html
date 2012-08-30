@@ -157,11 +157,11 @@ function createContent(eachContentPiece, source)
 
 //Fetching Content and creating each piece of content
 function onContentFetch(response, source) {
-	console.log ("Content: "+JSON.stringify(response.list));
+	console.log ("Source: "+source+" Content: "+JSON.stringify(response.list));
 	var allContent = response.list;
 	$.each(allContent, function(index, group) {
 		var eachContentPiece = group;
-		console.log("Content "+index+": "+JSON.stringify(eachContentPiece));
+		//console.log("Content "+index+": "+JSON.stringify(eachContentPiece));
 		createContent(eachContentPiece, source);	
 	});
 
