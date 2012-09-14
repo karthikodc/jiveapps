@@ -48,7 +48,7 @@ function renderUserTable(users) {
 }
 
 gadgets.util.registerOnLoadHandler(function() {
-
+  
   $("#btn_user_picker").click(function() {
     var callback = function(response) {
       var users = getUsersFromResponse(response);
@@ -56,4 +56,5 @@ gadgets.util.registerOnLoadHandler(function() {
     }
     osapi.jive.core.users.requestPicker({success: callback, multiple: isMultipleSelected()});
   });
+  gadgets.window.adjustHeight();
 });
