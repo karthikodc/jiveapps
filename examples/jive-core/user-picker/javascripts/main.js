@@ -43,7 +43,7 @@ function renderUserTable(users) {
   }
 
   $("#user-content").html(content);
-  $("#user-info").show();
+  $("#user-info").hide();
   gadgets.window.adjustHeight();
 }
 
