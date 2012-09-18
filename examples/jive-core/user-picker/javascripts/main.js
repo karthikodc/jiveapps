@@ -25,7 +25,7 @@ function renderUserTable(users) {
   content += "<th>Name</th>";
   content += "<th>Username</th>";
   // include email in canvas view
-  if (currentView == 'canvas' || currentView == 'default') // Jive 5 currently returns 'default' for the canvas view
+  if (currentView == 'canvas' || currentView =='default') // Jive 5 currently returns 'default' for the canvas view
     content += "<th>Email</th>";
   content += "</tr>";
 
@@ -37,7 +37,7 @@ function renderUserTable(users) {
     content += "<td>" + user.name + "</td>";
     content += "<td>" + user.username + "</td>";
     // include email in canvas view
-    if (currentView == 'canvas' || currentView == 'default') // Jive 5 currently returns 'default' for the canvas view
+    if (currentView == 'canvas' || currentView =='default') // Jive 5 currently returns 'default' for the canvas view
       content += "<td>" + user.email + "</td>";
     content += "</tr>";
   }
