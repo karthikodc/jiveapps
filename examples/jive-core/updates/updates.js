@@ -57,7 +57,7 @@ function accordionChange(event, ui) {
   }
   ui.oldContent.find("li").remove();
   loadUpdates($(ui.newContent).find("ul"), userId);
-    gadgets.window.adjustHeight();
+   
 
 }
 
