@@ -34,6 +34,7 @@ function search() {
         else {
             var html = "";
             var rows = response.data;
+            alert(rows);
             $.each(rows, function(index, row) {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
