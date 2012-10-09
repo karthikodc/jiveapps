@@ -33,6 +33,7 @@ function search() {
             alert(response.error.message);
         }
         else {
+            $("#result").show();
             var html = "";
             var rows = response.data;
             console.log(rows);
@@ -44,7 +45,7 @@ function search() {
                 html += "<td>" + row.subject + "</td>";
                 html += "</tr>";
             });
-            $("#result").show();
+            
             $("#search-results").html(html);
             gadgets.window.adjustHeight();
         }
