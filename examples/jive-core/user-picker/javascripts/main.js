@@ -52,7 +52,7 @@ gadgets.util.registerOnLoadHandler(function() {
   $("#btn_user_picker").click(function() {
     alert("hi");
     var callback = function(response) {
-      alert("callback")
+      alert("callback");
       var users = getUsersFromResponse(response);
       renderUserTable(users);
     }
