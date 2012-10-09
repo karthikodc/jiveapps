@@ -19,9 +19,10 @@ function search() {
         query : $("#query").val(),
         sort : $("#sort-type").val(),
         sortOrder : $("#sort-order").val()
-        alert(params);
+        
         
     };
+    alert(params);
     if (types.length > 0) {
         params.type = types;
     }
