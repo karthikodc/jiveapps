@@ -7,6 +7,7 @@ function init() {
 
 // Perform a search and display the results
 function search() {
+    alert("Hi");
     $("search-results").html("");
     gadgets.window.adjustHeight();
     var types = [];
