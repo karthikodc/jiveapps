@@ -55,6 +55,7 @@ gadgets.util.registerOnLoadHandler(function() {
       var users = getUsersFromResponse(response);
       renderUserTable(users);
     }
+    alert("bye");
     osapi.jive.core.users.requestPicker({success: callback, multiple: isMultipleSelected()});
   });
   gadgets.window.adjustHeight();
