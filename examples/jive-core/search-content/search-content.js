@@ -1,13 +1,13 @@
 // On-view-load initialization
 function init() {
-    alert("Init");
+   $("#result").show();
     $("#search").click(search);
     gadgets.window.adjustHeight();
 }
 
 // Perform a search and display the results
 function search() {
-    alert("Hi");
+    
     $("search-results").html("");
     gadgets.window.adjustHeight();
     var types = [];
@@ -22,7 +22,7 @@ function search() {
         
         
     };
-    alert(params);
+   
     if (types.length > 0) {
         params.type = types;
     }
@@ -33,7 +33,7 @@ function search() {
             alert(response.error.message);
         }
         else {
-            $("#result").show();
+            
             var html = "";
             var rows = response.data;
             console.log(rows);
