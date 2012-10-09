@@ -44,6 +44,7 @@ function search() {
                 html += "<td>" + row.subject + "</td>";
                 html += "</tr>";
             });
+            $("#result").show();
             $("#search-results").html(html);
             gadgets.window.adjustHeight();
         }
