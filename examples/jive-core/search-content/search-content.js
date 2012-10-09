@@ -1,6 +1,6 @@
 // On-view-load initialization
 function init() {
-   $("#result").show();
+   
     $("#search").click(search);
     gadgets.window.adjustHeight();
 }
