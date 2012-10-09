@@ -50,6 +50,7 @@ function renderUserTable(users) {
 gadgets.util.registerOnLoadHandler(function() {
   
   $("#btn_user_picker").click(function() {
+    alert("hi");
     var callback = function(response) {
       var users = getUsersFromResponse(response);
       renderUserTable(users);
