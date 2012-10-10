@@ -28,7 +28,7 @@ function search() {
     }
     console.log("searching for " + JSON.stringify(params));
     osapi.jive.core.searches.searchContent(params).execute(function(response) {
-       // console.log("searching response is " + JSON.stringify(response));
+       console.log("searching response is " + JSON.stringify(response));
         if (response.error) {
             alert(response.error.message);
         }
