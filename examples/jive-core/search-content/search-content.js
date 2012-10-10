@@ -39,7 +39,7 @@ function search() {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
                 html += "<td><img src=" + row.author.avatar + "/></td>";
-                html += "<td><a href="row.resources.html.ref">" + row.subject + "</a></td>";
+                html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
                 html += "<td>" + row.modificationDate + "</td>";
                html += "</tr>";
                 
