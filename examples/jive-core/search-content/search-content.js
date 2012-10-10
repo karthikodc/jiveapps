@@ -36,16 +36,17 @@ function search() {
             var html = "";
             var rows = response.data;
             $.each(rows, function(index, row) {
-                html += "<tr>";
+                html += "<tr colspan='3'>";
                 html += "<td>" + row.type + "</td>";
                 html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
-                html += "<td>" + row.modificationDate + "</td>";
+                
                html += "</tr>";
                html += "<tr><td>";
                html += "<table>";
                html += "<tr colspan='3'>";
                html += "<td>Author:</td> <td><img src=" + row.author.avatar + "/></td><td><a href=https://apps.onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
                 html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
+                html += "<td>" + row.modificationDate + "</td>";
                html += "</tr>";
                html += "</table>";
                 html += "</td></tr>";
