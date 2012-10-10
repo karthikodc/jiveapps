@@ -41,9 +41,9 @@ function search() {
                 html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
                 
                html += "</tr>";
-               html += "<tr><td>";
+               html += "<tr><td colspan='3'>";
                html += "<table>";
-               html += "<tr colspan='3'>";
+               html += "<tr >";
                html += "<td>Author:</td> <td><img src=" + row.author.avatar + "/></td><td><a href=https://apps.onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
                 html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
                 html += "<td>Modification Date:</td><td>" + row.modificationDate + "</td>";
