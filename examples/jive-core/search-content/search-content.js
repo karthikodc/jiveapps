@@ -39,10 +39,9 @@ function search() {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
                 html += "<td><img src=" + row.author.avatar + "/></td>";
-                html += "<td>" + row.resources.html.ref + "</td>";
+                html += "<td><a href="row.resources.html.ref">" + row.subject + "</a></td>";
                 html += "<td>" + row.modificationDate + "</td>";
-                html += "<td>" + row.subject + "</td>";
-                html += "</tr>";
+               html += "</tr>";
                 
             });
             console.log("Rows: "+html);
