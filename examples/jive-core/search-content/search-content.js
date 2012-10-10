@@ -43,7 +43,7 @@ function search() {
                html += "</tr>";
                html += "<tr><td>";
                html += "<table>";
-               html += "<tr rowspan='2'>";
+               html += "<tr colspan='3'>";
                html += "<td>Author:</td> <td><img src=" + row.author.avatar + "/></td><td><a href=https://apps.onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
                 html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
                html += "</tr>";
