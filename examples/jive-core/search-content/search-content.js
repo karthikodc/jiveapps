@@ -43,8 +43,9 @@ function search() {
                 html += "<td>" + row.modificationDate + "</td>";
                 html += "<td>" + row.subject + "</td>";
                 html += "</tr>";
+                
             });
-            
+            console.log("Rows: "+html);
             $("#search-results").html(html);
             gadgets.window.adjustHeight();
         }
