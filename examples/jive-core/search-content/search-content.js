@@ -40,6 +40,7 @@ function search() {
             $.each(rows, function(index, row) {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
+                html += "<td>" + row.avatar + "</td>";
                 html += "<td><a href="+row.resources.html.ref+">" + row.resources.self.ref + "</a></td>";
                 html += "<td>" + row.modificationDate + "</td>";
                 html += "<td>" + row.subject + "</td>";
