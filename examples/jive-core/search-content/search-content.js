@@ -41,7 +41,7 @@ function search() {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
                 html += "<td>" + row.author.id + "</td>";
-                html += "<td><a href="+row.resources.html.ref+">" + row.resources.self.ref + "</a></td>";
+                html += "<td><a href="+row.resources.html.ref+">" + row.resources.html.ref + "</a></td>";
                 html += "<td>" + row.modificationDate + "</td>";
                 html += "<td>" + row.subject + "</td>";
                 html += "</tr>";
