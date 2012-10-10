@@ -38,6 +38,7 @@ function search() {
             $.each(rows, function(index, row) {
                 html += "<tr>";
                 html += "<td>" + row.type + "</td>";
+                html += "<td>" + row.type + "</td>";
                 html += "<td>" + row.resources.html.ref + "</td>";
                 html += "<td>" + row.modificationDate + "</td>";
                 html += "<td>" + row.subject + "</td>";
