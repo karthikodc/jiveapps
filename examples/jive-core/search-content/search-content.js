@@ -42,7 +42,13 @@ function search() {
                 html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
                 html += "<td>" + row.modificationDate + "</td>";
                html += "</tr>";
-                
+               html += "<tr><td>";
+               html += "<table>";
+               html += "<tr>";
+               html += "<td>Author:</td><td>" + row.author.name + "</td>";
+               html += "</tr>";
+               html += "</table>";
+                html += "</td></tr>";
             });
             console.log("Rows: "+html);
             $("#search-results").html(html);
