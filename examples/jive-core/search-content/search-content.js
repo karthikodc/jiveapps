@@ -37,18 +37,18 @@ function search() {
         }
         else {
             var html = "";
-            html +="<div><ul>";
+          
             var rows = response.data;
             $.each(rows, function(index, row) {
-            
+              html +="<ul>";
                html += "<li><a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
               
                html +="</li>";
                html +="<li>" + row.contentSummary+"</li>";
                
-              
+              html +="</ul>";
             });
-            html +="</ul></div>";
+            
             $("#search-results").html(html);
             $("#search-info").show();
             gadgets.window.adjustHeight();
