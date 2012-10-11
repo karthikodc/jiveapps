@@ -1,12 +1,22 @@
 // On-view-load initialization
 function init() {
    
-    $("#search").click(getSearchCollectionWithCallback);
+    $("#search").click(search);
     gadgets.window.adjustHeight();
-}
-_getSearchCollectionWithCallback: function(search, callback) {
+    var  = {
+        //limit : $("#limit").val(),
+        query : $("#query").val(),
+        //sort : $("#sort-type").val(),
+       // sortOrder : $("#sort-order").val()
+        
+        
+    };
+    
+    _getSearchCollectionWithCallback: function(params, callback) {
       this._getSearchCollection(search).execute(callback);
   },
+}
+
 // Perform a search and display the results
 function search() {
     
