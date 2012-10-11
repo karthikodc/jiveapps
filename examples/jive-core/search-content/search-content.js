@@ -40,11 +40,13 @@ function search() {
             html +="<div><ul>";
             var rows = response.data;
             $.each(rows, function(index, row) {
-               html +="<li id='searchli'>";
-               html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
-               html +="<div>" + row.contentSummary+"</div>";
-               
+            
+               html += "<li><a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
+              
                html +="</li>";
+               html +="<li>" + row.contentSummary+"</li>";
+               
+              
             });
             html +="</ul></div>";
             $("#search-results").html(html);
