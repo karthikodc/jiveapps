@@ -79,7 +79,36 @@ function search() {
                      html +="</div>"
                }
             });
-               
+            $.each(rows, function(index, row) {
+               if(row.type=="update")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+               }
+            });
+            .each(rows, function(index, row) {
+               if(row.type=="post")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+               }
+            });
             
             $("#search-results").html(html);
             $("#search-info").show();
