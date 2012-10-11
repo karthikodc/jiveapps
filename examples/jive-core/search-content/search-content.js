@@ -4,7 +4,7 @@ function init() {
     $("#search").click(getSearchCollectionWithCallback);
     gadgets.window.adjustHeight();
 }
-getSearchCollectionWithCallback: function(search, callback) {
+_getSearchCollectionWithCallback: function(search, callback) {
       this._getSearchCollection(search).execute(callback);
   },
 // Perform a search and display the results
