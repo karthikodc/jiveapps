@@ -68,7 +68,7 @@ function getISOStrict(date) {
                var newdate=function getISOStrict(date)
                html +="<li>";
                html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
-               html +="<div>" + row.contentSummary+"</div>
+               html +="<div>" + row.contentSummary+"</div>";
                html += "<dl>";
                html +="<dt>Author:</dt><dd><span>"+ row.author.username +"</span></dd></dt>";
                html +="<dt>Date:</dt><dd><span>"+ newdate +"</span></dd></dt>";
