@@ -29,7 +29,7 @@ function search() {
     console.log("searching for " + JSON.stringify(params));
     osapi.jive.core.searches.searchContent(params).execute(function(response) {
        console.log("searching response is " + JSON.stringify(response));
-        $("searchresult").show();
+       
         if (response.error) {
             alert(response.error.message);
         }
@@ -55,6 +55,7 @@ function search() {
             });
             console.log("Rows: "+html);
             $("#search-results").html(html);
+            $("#search-info").show();
             gadgets.window.adjustHeight();
         }
     });
