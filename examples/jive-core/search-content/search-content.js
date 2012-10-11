@@ -48,6 +48,7 @@ function search() {
             var type="";
             
             $.each(rows, function(index, row) {
+               
                if(row.type=="discussion")
                {
                      url=row.resources.html.ref;
@@ -57,6 +58,9 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+"</li><ul>"
+                     html +="</div>"
                   
                }
                else if(row.type=="discussion")
@@ -98,10 +102,7 @@ function search() {
                      likeCount=row.likeCount;
                      type=row.type;
                }
-              html +="<ul>";
-               html += "<li>" +row.type + "</li>";
-                             
-              html +="</ul>";
+             
             });
             
             $("#search-results").html(html);
