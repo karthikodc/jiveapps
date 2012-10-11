@@ -40,10 +40,10 @@ function search() {
             html +="<div><ul>";
             var rows = response.data;
             $.each(rows, function(index, row) {
-               html +="<li>";
+               html +="<li id='searchli'>";
                html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
                html +="<div>" + row.contentSummary+"</div>";
-               html += "<dl>";
+               html += "<dl id='searchdi'>";
                html +="<dt>Author:</dt><dd><span>"+ row.author.username +"</span></dd></dt>";
                html +="<dt>Date:</dt><dd><span>Date</span></dd></dt>";
                html +="<dt>Location:</dt><dd><span> 1 </span></dd></dt>";
