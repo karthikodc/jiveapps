@@ -63,7 +63,8 @@ function search() {
                   
                }
             });
-                html +="<hr>"; 
+                html +="<hr>";
+         $.each(rows, function(index, row) {
                  if(row.type=="blog")
                {
                      url=row.resources.html.ref;
