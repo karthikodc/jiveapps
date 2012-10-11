@@ -60,27 +60,24 @@ function getISOStrict(date) {
         else {
           
             var html = "";
-               html += "<div>";
-               html +="<ul>";
+               
             var rows = response.data;
             $.each(rows, function(index, row) {
                //var date = new Date(row.modificationDate);
                //var newdate=function getISOStrict(date)
-               html +="<li>";
-               html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
-               html +="<div>" + row.contentSummary+"</div>";
-               html += "<dl>";
-               html +="<dt>Author:</dt><dd><span>"+ row.author.username +"</span></dd></dt>";
-               html +="<dt>Date:</dt><dd><span>Date</span></dd></dt>";
-               html +="<dt>Location:</dt><dd><span> 1 </span></dd></dt>";
-               html +="<dt>Bookmarks:</dt><dd><span> 2 </span></dd></dt>";
-               html +="<dt>Likes:</dt><dd><span> " + row.likeCount + "</span></dd></dt>";
-               html +="<dt>Latest activity:</dt><dd><span>"+ row.modificationDate + "</span></dd>";
-               html +="<dt>Tag</dt><dd><span> 3 </span></dd>";
-               html +="</li>";
+               html += "<tr colspan='3'>";
+               html += "<td>" + row.type + "</td>";
+               html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
+               html += "<tr >";
+               html += "<td>Author:</td> <td><img src=" + row.author.avatarURL + " width='25px' height='25px' border='0'/></td><td><a href=https://apps-onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
+               html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
+               html += "<td>Modification Date:</td><td>" + row.modificationDate + "</td>";
+               html += "</tr>";
+               html += "</table>";
+               html += "</td></tr>";
 
             });
-             html +="</ul></div>";
+             
             console.log("Rows: "+html);
             $("#search-results").html(html);
             $("#search-info").show();
