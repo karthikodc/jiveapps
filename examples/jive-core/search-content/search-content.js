@@ -41,9 +41,9 @@ function search() {
             var rows = response.data;
             $.each(rows, function(index, row) {
               html +="<ul>";
-               html += "<li><a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
+               html += "<li><a href="+ row.resources.html.ref +">" +row.type + row.subject + "</a></li>";
               
-               html +="</li>";
+              
                html +="<li>" + row.contentSummary+"</li>";
                
               html +="</ul>";
