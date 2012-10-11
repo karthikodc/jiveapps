@@ -36,21 +36,17 @@ function search() {
             alert(response.error.message);
         }
         else {
-          
             var html = "";
-               html +="<div>";
-               <html> +="<ul>";
             var rows = response.data;
             $.each(rows, function(index, row) {
-               
-               
-
+                html += "<tr>";
+                html += "<td>" + row.type + "</td>";
+                html += "<td>" + row.resources.self.ref + "</td>";
+                html += "<td>" + row.modificationDate + "</td>";
+                html += "<td>" + row.subject + "</td>";
+                html += "</tr>";
             });
-             <html> +="</ul>";
-            html +="</div>";
-            console.log("Rows: "+html);
             $("#search-results").html(html);
-            $("#search-info").show();
             gadgets.window.adjustHeight();
         }
     });
