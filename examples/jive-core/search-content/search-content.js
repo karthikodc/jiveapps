@@ -52,7 +52,8 @@ function search() {
                html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
                html += "<td>Modification Date:</td><td>" + row.modificationDate + "</td>";
                html += "</tr>";
-
+               html += "</table>";
+               html += "</td></tr>";
             });
              
             console.log("Rows: "+html);
