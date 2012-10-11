@@ -59,51 +59,27 @@ function search() {
                      likeCount=row.likeCount;
                      type=row.type;
                      html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+"</li><ul>"
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
                      html +="</div>"
                   
                }
-               else if(row.type=="discussion")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.username;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-               }
-               else if(row.type=="question")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.username;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-               }
-               else if(row.type=="blog")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.username;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-               }
-               else {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.username;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-               }
-             
             });
+            $.each(rows, function(index, row) {
+               if(row.type=="document")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+               }
+            });
+               
             
             $("#search-results").html(html);
             $("#search-info").show();
