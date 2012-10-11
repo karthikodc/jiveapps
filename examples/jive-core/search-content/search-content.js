@@ -1,10 +1,12 @@
 // On-view-load initialization
 function init() {
    
-    $("#search").click(search);
+    $("#search").click(getSearchCollectionWithCallback);
     gadgets.window.adjustHeight();
 }
-
+getSearchCollectionWithCallback: function(search, callback) {
+      this._getSearchCollection(search).execute(callback);
+  },
 // Perform a search and display the results
 function search() {
     
@@ -22,6 +24,7 @@ function search() {
         
         
     };
+
    
    /* if (types.length > 0) {
         params.type = types;
