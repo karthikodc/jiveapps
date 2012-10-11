@@ -64,6 +64,8 @@ function search() {
                   
                }
             });
+            
+            html +="<hr>";
             $.each(rows, function(index, row) {
                if(row.type=="document")
                {
@@ -79,6 +81,7 @@ function search() {
                      html +="</div>"
                }
             });
+            html +="<hr>";
             $.each(rows, function(index, row) {
                if(row.type=="update")
                {
@@ -94,6 +97,7 @@ function search() {
                      html +="</div>"
                }
             });
+            html +="<hr>";
             $.each(rows, function(index, row) {
                if(row.type=="post")
                {
@@ -109,6 +113,7 @@ function search() {
                      html +="</div>"
                }
             });
+            html +="<hr>";
             
             $("#search-results").html(html);
             $("#search-info").show();
