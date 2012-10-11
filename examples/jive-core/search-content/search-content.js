@@ -37,6 +37,7 @@ function search() {
         }
         else {
             var html = "";
+            html +="<div><ul>";
             var rows = response.data;
             $.each(rows, function(index, row) {
                html +="<li>";
@@ -53,7 +54,9 @@ function search() {
                html += "</dl>";
                html +="</li>";
             });
+            html +="</ul></div>";
             $("#search-results").html(html);
+            $("#search-info").show();
             gadgets.window.adjustHeight();
         }
     });
