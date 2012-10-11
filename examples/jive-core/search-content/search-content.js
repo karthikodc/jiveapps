@@ -65,7 +65,7 @@ function search() {
             });
             
             html +="<hr>";
-            .each(rows, function(index, row) {   
+            $.each(rows, function(index, row) {   
                if(row.type=="blog")
                {
                      url=row.resources.html.ref;
