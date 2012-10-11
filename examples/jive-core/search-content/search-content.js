@@ -41,10 +41,11 @@ function search() {
             var rows = response.data;
             $.each(rows, function(index, row) {
               html +="<ul>";
-               html += "<li><a href="+ row.resources.html.ref +">" +row.type + row.subject + "</a></li>";
+               html += "<li><a href="+ row.resources.html.ref +">" +row.type + row.subject + "</a>";
               
               
-               html +="<li>" + row.contentSummary+"</li>";
+               html +="<ul>" + row.contentSummary+"</ul>";
+                html +="</li>";
                
               html +="</ul>";
             });
