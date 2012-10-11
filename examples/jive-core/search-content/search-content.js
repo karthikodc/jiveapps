@@ -39,14 +39,59 @@ function search() {
             var html = "";
           
             var rows = response.data;
+            var url="";
+            var subject="";
+            var contentSummary="";
+            var author="";
+            var modifiedDate="";
+            var likeCount="";
+            var type="";
+            
             $.each(rows, function(index, row) {
+               if(row.type=="discussion")
+               {
+                     url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                  
+               }
+               else if(row.type=="discussion")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+               }
+               else if(row.type=="question")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+               }
+               else if(row.type=="blog")
+               {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+               }
               html +="<ul>";
-               html += "<li><a href="+ row.resources.html.ref +">" +row.type + row.subject + "</a>";
-              
-              
-               html +="<ul>" + row.contentSummary+"</ul>";
-                html +="</li>";
-               
+               html += "<li>+row.type + "</li>"";
+                             
               html +="</ul>";
             });
             
