@@ -89,6 +89,15 @@ function search() {
                      likeCount=row.likeCount;
                      type=row.type;
                }
+               else {
+                  url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.username;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+               }
               html +="<ul>";
                html += "<li>+row.type + "</li>"";
                              
