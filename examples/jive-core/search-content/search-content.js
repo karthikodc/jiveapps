@@ -65,6 +65,24 @@ function search() {
             });
             
             html +="<hr>";
+            .each(rows, function(index, row) {   
+               if(row.type=="blog")
+               {
+                     url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.name;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+                  
+               }
+            });
+            
+            html +="<hr>";
             $.each(rows, function(index, row) {   
                if(row.type=="discussion")
                {
