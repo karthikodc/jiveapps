@@ -33,6 +33,7 @@ function search() {
             alert(response.error.message);
         }
         else {
+           $("searchresult").show();
             var html = "";
             var rows = response.data;
             $.each(rows, function(index, row) {
