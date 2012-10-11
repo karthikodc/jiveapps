@@ -94,7 +94,7 @@ function search() {
                      html +="</div>"
                }
             });
-            .each(rows, function(index, row) {
+            $.each(rows, function(index, row) {
                if(row.type=="post")
                {
                   url=row.resources.html.ref;
