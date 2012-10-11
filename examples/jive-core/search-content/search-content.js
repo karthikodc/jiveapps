@@ -65,7 +65,7 @@ function getISOStrict(date) {
             var rows = response.data;
             $.each(rows, function(index, row) {
                var date = new Date(row.modificationDate);
-               var newdate=function getISOStrict(date);
+               var newdate=function getISOStrict(date)
                html +="<li>";
                html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
                html +="<div>" + row.contentSummary+"</div>
