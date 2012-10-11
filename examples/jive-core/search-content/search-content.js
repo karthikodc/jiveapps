@@ -44,13 +44,14 @@ function search() {
                html += "<tr colspan='3'>";
                html += "<td>" + row.type + "</td>";
                html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
+               html +="</tr>"
+               html += "<tr><td colspan='3'>";
+               html += "<table>";
                html += "<tr >";
-               html += "<td>Author:</td> <td><img src=" + row.author.avatarURL + " width='25px' height='25px' border='0'/></td><td><a href=https://apps-onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
+               html += "<td>Author:</td> <td><img src=" + row.author.avatarURL + " width='5px' height='5px' border='0'/></td><td><a href=https://apps.onprem.jivesoftware.com/people/"+row.author.username+">" + row.author.name + "</td>";
                html += "<td>Likes:</td><td>" + row.likeCount + "</td>";
                html += "<td>Modification Date:</td><td>" + row.modificationDate + "</td>";
                html += "</tr>";
-               html += "</table>";
-               html += "</td></tr>";
 
             });
              
