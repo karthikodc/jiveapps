@@ -3,7 +3,7 @@ function init() {
    
     $("#search").click(search);
     gadgets.window.adjustHeight();
-    var  = {
+    var  params= {
         //limit : $("#limit").val(),
         query : $("#query").val(),
         //sort : $("#sort-type").val(),
