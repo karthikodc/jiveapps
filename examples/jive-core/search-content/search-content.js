@@ -10,22 +10,22 @@ function search() {
     
     $("search-results").html("");
     gadgets.window.adjustHeight();
-    var types = [];
+   /* var types = [];
     $("input:checked").each(function() {
         types.push(this.id);
-    });
+    });*/
     var params = {
-        limit : $("#limit").val(),
+        //limit : $("#limit").val(),
         query : $("#query").val(),
-        sort : $("#sort-type").val(),
-        sortOrder : $("#sort-order").val()
+        //sort : $("#sort-type").val(),
+       // sortOrder : $("#sort-order").val()
         
         
     };
    
-    if (types.length > 0) {
+   /* if (types.length > 0) {
         params.type = types;
-    }
+    }*/
     console.log("searching for " + JSON.stringify(params));
     osapi.jive.core.searches.searchContent(params).execute(function(response) {
        console.log("searching response is " + JSON.stringify(response));
