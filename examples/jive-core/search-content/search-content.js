@@ -99,7 +99,7 @@ function search() {
                      type=row.type;
                }
               html +="<ul>";
-               html += "<li>+row.type + "</li>"";
+               html += "<li>" +row.type + "</li>"";
                              
               html +="</ul>";
             });
