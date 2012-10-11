@@ -29,11 +29,12 @@ function search() {
     console.log("searching for " + JSON.stringify(params));
     osapi.jive.core.searches.searchContent(params).execute(function(response) {
        console.log("searching response is " + JSON.stringify(response));
+        $("searchresult").show();
         if (response.error) {
             alert(response.error.message);
         }
         else {
-           $("searchresult").show();
+          
             var html = "";
             var rows = response.data;
             $.each(rows, function(index, row) {
