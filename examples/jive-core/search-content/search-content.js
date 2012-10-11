@@ -42,6 +42,7 @@ function search() {
                <html> +="<ul>";
             var rows = response.data;
             $.each(rows, function(index, row) {
+               
                html +="<li>";
                html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
                html +="<div>" + row.contentSummary+"</div>";
@@ -53,7 +54,7 @@ function search() {
                html +="<dt>Likes:</dt><dd><span> " + row.likeCount + "</span></dd></dt>";
                html +="<dt>Latest activity:</dt><dd><span>"+ row.modificationDate + "</span></dd>";
                html +="<dt>Tag</dt><dd><span> 3 </span></dd>";
-          html += "</dl>";
+               html += "</dl>";
                html +="</li>";
 
             });
