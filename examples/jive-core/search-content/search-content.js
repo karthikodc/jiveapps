@@ -43,15 +43,7 @@ function search() {
                html +="<li id='searchli'>";
                html += "<a href="+ row.resources.html.ref +"><span>" +row.type+" </span><div>" + row.subject + "</div></a>";
                html +="<div>" + row.contentSummary+"</div>";
-               html += "<dl id='searchdi'>";
-               html +="<dt>Author:</dt><dd><span>"+ row.author.username +"</span></dd></dt>";
-               html +="<dt>Date:</dt><dd><span>Date</span></dd></dt>";
-               html +="<dt>Location:</dt><dd><span> 1 </span></dd></dt>";
-               html +="<dt>Bookmarks:</dt><dd><span> 2 </span></dd></dt>";
-               html +="<dt>Likes:</dt><dd><span> " + row.likeCount + "</span></dd></dt>";
-               html +="<dt>Latest activity:</dt><dd><span>"+ row.modificationDate + "</span></dd>";
-               html +="<dt>Tag</dt><dd><span> 3 </span></dd>";
-               html += "</dl>";
+               
                html +="</li>";
             });
             html +="</ul></div>";
