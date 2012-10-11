@@ -48,7 +48,38 @@ function search() {
             var type="";
             
             $.each(rows, function(index, row) {
-               
+                if(row.type=="question")
+               {
+                     url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.name;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+                  
+               }
+            });
+                html +="<hr>"; 
+                 if(row.type=="blog")
+               {
+                     url=row.resources.html.ref;
+                     subject=row.subject;
+                      contentSummary=row.contentSummary;
+                      author=row.author.name;
+                      modifiedDate=row.modificationDate;
+                     likeCount=row.likeCount;
+                     type=row.type;
+                     html +="<div>";
+                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
+                     html +="</div>"
+                  
+               }
+            });
+                html +="<hr>"; 
                if(row.type=="discussion")
                {
                      url=row.resources.html.ref;
