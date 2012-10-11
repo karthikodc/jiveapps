@@ -23,29 +23,7 @@ function search() {
         
         
     };
-function getISOStrict(date) {
 
-    if (Date.prototype.toISOString) {
-        return date.toISOString().replace(/Z$/, "+0000");
-    }
-
-    function pad(number) {
-        var r = String(number);
-        if ( r.length === 1 ) {
-            r = '0' + r;
-        }
-        return r;
-    }
-
-    return date.getUTCFullYear()
-        + '-' + pad( date.getUTCMonth() + 1 )
-        + '-' + pad( date.getUTCDate() );
-       // + 'T' + pad( date.getUTCHours() )
-       // + ':' + pad( date.getUTCMinutes() )
-      //  + ':' + pad( date.getUTCSeconds() )
-       // + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
-   //     + '+0000';
-}
    
    /* if (types.length > 0) {
         params.type = types;
@@ -63,8 +41,6 @@ function getISOStrict(date) {
                
             var rows = response.data;
             $.each(rows, function(index, row) {
-               //var date = new Date(row.modificationDate);
-               //var newdate=function getISOStrict(date)
                html += "<tr colspan='3'>";
                html += "<td>" + row.type + "</td>";
                html += "<td><a href="+ row.resources.html.ref +">" + row.subject + "</a></td>";
