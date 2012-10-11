@@ -54,7 +54,7 @@ function search() {
                      url=row.resources.html.ref;
                      subject=row.subject;
                       contentSummary=row.contentSummary;
-                      author=row.author.username;
+                      author=row.author.name;
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
@@ -70,7 +70,7 @@ function search() {
                   url=row.resources.html.ref;
                      subject=row.subject;
                       contentSummary=row.contentSummary;
-                      author=row.author.username;
+                      author=row.author.name;
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
@@ -85,7 +85,7 @@ function search() {
                   url=row.resources.html.ref;
                      subject=row.subject;
                       contentSummary=row.contentSummary;
-                      author=row.author.username;
+                      author=row.author.name;
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
@@ -100,7 +100,7 @@ function search() {
                   url=row.resources.html.ref;
                      subject=row.subject;
                       contentSummary=row.contentSummary;
-                      author=row.author.username;
+                      author=row.author.name;
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
