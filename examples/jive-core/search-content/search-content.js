@@ -48,7 +48,7 @@ function search() {
             var type="";
             
             
-               
+            $.each(rows, function(index, row) {   
                if(row.type=="discussion")
                {
                      url=row.resources.html.ref;
