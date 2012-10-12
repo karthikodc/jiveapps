@@ -156,7 +156,7 @@ function search() {
                }
             });
             html +="<hr>";
-            
+             console.log(html);
             $("#search-results").html(html);
             $("#search-info").show();
             gadgets.window.adjustHeight();
