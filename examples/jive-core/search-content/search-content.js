@@ -61,7 +61,7 @@ function search() {
                      type=row.type;
                      html +="<ul>";
                      html +="<li>"+type+"</li>";
-                     html +="<li>"+subject+"</li>";
+                     html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
@@ -90,7 +90,7 @@ function search() {
                      type=row.type;
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
-                     html +="<li>"+subject+"</li>";
+                    html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
@@ -119,7 +119,7 @@ function search() {
                      type=row.type;
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
-                     html +="<li>"+subject+"</li>";
+                    html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
