@@ -43,6 +43,7 @@ function search() {
             var subject="";
             var contentSummary="";
             var author="";
+            var avatar="";
             var modifiedDate="";
             var likeCount="";
             var type="";
@@ -56,6 +57,7 @@ function search() {
                       author=row.author.name;
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
+                     avatar=row.author.avatarURL;
                      type=row.type;
                      html +="<ul>";
                      html +="<li>"+type+"</li>";
@@ -64,6 +66,12 @@ function search() {
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
                       html +="<li>"+subject+"</li>";
+                      html +="</ul>";
+                      html +="<ul>";
+                     html +="<li><img src="+ avatar+"/></li>";
+                      html +="<li>"+author+"</li>";
+                       html +="<li>"+likeCount+"</li>";
+                       html +="<li>"+modifiedDate+"</li>";
                       html +="</ul>";
                   
                }
@@ -88,6 +96,12 @@ function search() {
                      html +="<li>&nbsp;</li>";
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
+                      html +="<ul>";
+                     html +="<li><img src="+ avatar+"/></li>";
+                      html +="<li>"+author+"</li>";
+                       html +="<li>"+likeCount+"</li>";
+                       html +="<li>"+modifiedDate+"</li>";
+                      html +="</ul>";
                   
                }
             });
@@ -110,6 +124,12 @@ function search() {
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
                       html +="<li>"+subject+"</li>";
+                      html +="</ul>";
+                      html +="<ul>";
+                     html +="<li><img src="+ avatar+"/></li>";
+                      html +="<li>"+author+"</li>";
+                       html +="<li>"+likeCount+"</li>";
+                       html +="<li>"+modifiedDate+"</li>";
                       html +="</ul>";
                   
                }
