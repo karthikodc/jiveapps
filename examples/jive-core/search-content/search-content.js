@@ -5,7 +5,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
-/*function getISOStrict(date) {
+function getISOStrict(date) {
    
    if (Date.prototype.toISOString) {
         return date.toISOString().replace(/Z$/, "+0000");
@@ -19,15 +19,15 @@ function init() {
         return r;
     }
 
-    return date.getUTCDate()
-        + '-' + pad( date.getUTCMonth() + 1 )
+    return date.getUTCDate();
+ /*       + '-' + pad( date.getUTCMonth() + 1 )
         + '-' + pad( date.getUTCFullYear() );
         + 'T' + pad( date.getUTCHours() )
        + ':' + pad( date.getUTCMinutes() )
        + ':' + pad( date.getUTCSeconds() )
        + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
-       + '+0000';
-}*/
+       + '+0000'; */
+}
 // Perform a search and display the results
 function search() {
     
@@ -93,7 +93,7 @@ function search() {
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
+                     html +="<li><img src='"+ avatar + "' width='25px' height='25px' border='0'/></li>";
                       html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
@@ -111,25 +111,25 @@ function search() {
                       contentSummary=row.contentSummary;
                       author=row.author.name;
                       modifiedDate=row.modificationDate;
-                     // var date = getISOStrict(modifiedDate);
+                      var date = getISOStrict(modifiedDate);
                      likeCount=row.likeCount;
                      type=row.type;
                      avatar=row.author.avatarURL;
                      username=row.author.username;
-                    html +="<ul>";
-                     html +="<li><img src='discussion.png'/> </li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
+                    html +='<ul>';
+                     html +='<li><img src="discussion.png"/> </li>';
+                     html +='<li><a href="'+url+'">'+subject+'</a></li>';
+                     html +='</ul>';
+                     html +='<ul>';
+                     html +='<li>&nbsp;</li>';
+                      html +='<li>'+contentSummary+'</li>';
+                      html +='</ul>';
+                      html +='<ul>';
+                     html +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                      html +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                       html +='<li>'+likeCount+'</li>';
+                       html +='<li>'+modifiedDate+'</li>';
+                      html +='</ul>';
                   
                }
             });
