@@ -92,7 +92,7 @@ function search() {
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                     html +="<li><img src="+ avatar+ "width='25px' height='25px' border='0'/></li>";
                       html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
@@ -112,6 +112,8 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
+                     avatar=row.author.avatarURL;
+                     username=row.author.username;
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li><a href="+url+">"+subject+"</a></li>";
@@ -121,7 +123,7 @@ function search() {
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                     html +="<li><img src="+ avatar+ "width='25px' height='25px' border='0'/></li>";
                       html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
@@ -142,6 +144,8 @@ function search() {
                      // var date = getISOStrict(modifiedDate);
                      likeCount=row.likeCount;
                      type=row.type;
+                     avatar=row.author.avatarURL;
+                     username=row.author.username;
                     html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li><a href="+url+">"+subject+"</a></li>";
@@ -151,7 +155,7 @@ function search() {
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                     html +="<li><img src="+ avatar+ "width='25px' height='25px' border='0'/></li>";
                       html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
