@@ -57,9 +57,11 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                     html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
+                     
                   
                }
             });
@@ -75,9 +77,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                    html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
                   
                }
             });
@@ -93,9 +96,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                     html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
                   
                }
             });
@@ -111,9 +115,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                     html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
                }
             });
             html +="<hr>";
@@ -127,9 +132,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                     html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
                }
             });
             html +="<hr>";
@@ -143,9 +149,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                     html +="<div>";
-                     html +="<ul><li>"+author+" "+subject+" "+type+"</li><ul>"
-                     html +="</div>"
+                     html +="<ul>";
+                     html +="<li>"type+"</li>
+                     html +="<li>"subject+"</li>
+                     html +="<ul>"
                }
             });
             html +="<hr>";
