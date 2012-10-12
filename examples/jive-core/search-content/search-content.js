@@ -61,7 +61,10 @@ function search() {
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
                      html +="</ul>";
-                     
+                     html +="<ul>";
+                     html +="<li>&nbsp;</li>";
+                      html +="<li>"+subject+"</li>";
+                      html +="</ul>";
                   
                }
             });
