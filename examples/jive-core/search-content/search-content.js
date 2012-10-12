@@ -7,7 +7,7 @@ function init() {
 }
 function getISOStrict(date) {
 
-    if (Date.prototype.toISOString) {
+   /* if (Date.prototype.toISOString) {
         return date.toISOString().replace(/Z$/, "+0000");
     }
 
@@ -17,11 +17,11 @@ function getISOStrict(date) {
             r = '0' + r;
         }
         return r;
-    }
+    }*/
 
-    return date.getUTCFullYear()
+    return date.getUTCDate()
         + '-' + pad( date.getUTCMonth() + 1 )
-        + '-' + pad( date.getUTCDate() );
+        + '-' + pad( date.getUTCFullYear() );
        // + 'T' + pad( date.getUTCHours() )
         //+ ':' + pad( date.getUTCMinutes() )
        // + ':' + pad( date.getUTCSeconds() )
