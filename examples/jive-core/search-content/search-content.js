@@ -60,7 +60,7 @@ function search() {
                      html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                     html +="</ul>";
                      
                   
                }
@@ -80,7 +80,7 @@ function search() {
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                     html +="</ul>";
                   
                }
             });
@@ -99,7 +99,7 @@ function search() {
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                     html +="</ul>";
                   
                }
             });
@@ -118,7 +118,7 @@ function search() {
                     html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                    html +="</ul>";
                }
             });
             html +="<hr>";
@@ -135,7 +135,7 @@ function search() {
                     html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                     html +="</ul>";
                }
             });
             html +="<hr>";
@@ -152,7 +152,7 @@ function search() {
                     html +="<ul>";
                      html +="<li>"+type+"</li>";
                      html +="<li>"+subject+"</li>";
-                     html +="<ul>";
+                     html +="</ul>";
                }
             });
             html +="<hr>";
