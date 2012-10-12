@@ -5,7 +5,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
-function getISOStrict(date) {
+ /* function getISOStrict(date) {
    
    if (Date.prototype.toISOString) {
         return date.toISOString().replace(/Z$/, "+0000");
@@ -20,14 +20,15 @@ function getISOStrict(date) {
     }
 
     return date.getUTCDate();
- /*       + '-' + pad( date.getUTCMonth() + 1 )
+       + '-' + pad( date.getUTCMonth() + 1 )
         + '-' + pad( date.getUTCFullYear() );
         + 'T' + pad( date.getUTCHours() )
        + ':' + pad( date.getUTCMinutes() )
        + ':' + pad( date.getUTCSeconds() )
        + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
-       + '+0000'; */
-}
+       + '+0000'; 
+} */
+
 // Perform a search and display the results
 function search() {
     
@@ -111,7 +112,7 @@ function search() {
                       contentSummary=row.contentSummary;
                       author=row.author.name;
                       modifiedDate=row.modificationDate;
-                      var date = getISOStrict(modifiedDate);
+                      //var date = getISOStrict(modifiedDate);
                      likeCount=row.likeCount;
                      type=row.type;
                      avatar=row.author.avatarURL;
