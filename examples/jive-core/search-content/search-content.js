@@ -71,37 +71,7 @@ function search() {
             var type="";
             var username="";
             
-            $.each(rows, function(index, row) {   
-               if(row.type=="question")
-               {
-                     url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     avatar=row.author.avatarURL;
-                     username=row.author.username;
-                     type=row.type;
-                     html +="<ul>";
-                     html +="<li>"+type+"</li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
-                  
-               }
-            });
             
-            html +="<hr>";
             $.each(rows, function(index, row) {   
                if(row.type=="blog")
                {
@@ -147,7 +117,7 @@ function search() {
                      avatar=row.author.avatarURL;
                      username=row.author.username;
                     html +="<ul>";
-                     html +="<li>"+type+"</li>";
+                     html +="<li><img src='question.png'/> </li>";
                      html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
