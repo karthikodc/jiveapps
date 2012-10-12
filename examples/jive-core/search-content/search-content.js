@@ -69,6 +69,7 @@ function search() {
             var modifiedDate="";
             var likeCount="";
             var type="";
+            var username="";
             
             $.each(rows, function(index, row) {   
                if(row.type=="question")
@@ -80,6 +81,7 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      avatar=row.author.avatarURL;
+                     username=row.author.username;
                      type=row.type;
                      html +="<ul>";
                      html +="<li>"+type+"</li>";
@@ -90,8 +92,8 @@ function search() {
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+"/></li>";
-                      html +="<li>"+author+"</li>";
+                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
                       html +="</ul>";
@@ -112,15 +114,15 @@ function search() {
                      type=row.type;
                    html +="<ul>";
                      html +="<li>"+type+"</li>";
-                    html +="<li><a href="+url+">"+subject+"</a></li>";
+                     html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+"/></li>";
-                      html +="<li>"+author+"</li>";
+                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
                       html +="</ul>";
@@ -140,17 +142,17 @@ function search() {
                      // var date = getISOStrict(modifiedDate);
                      likeCount=row.likeCount;
                      type=row.type;
-                   html +="<ul>";
+                    html +="<ul>";
                      html +="<li>"+type+"</li>";
-                    html +="<li><a href="+url+">"+subject+"</a></li>";
+                     html +="<li><a href="+url+">"+subject+"</a></li>";
                      html +="</ul>";
                      html +="<ul>";
                      html +="<li>&nbsp;</li>";
                       html +="<li>"+subject+"</li>";
                       html +="</ul>";
                       html +="<ul>";
-                     html +="<li><img src="+ avatar+"/></li>";
-                      html +="<li>"+author+"</li>";
+                     html +="<li><img src="+ avatar+ "width='5px' height='5px' border='0'/></li>";
+                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
                        html +="<li>"+likeCount+"</li>";
                        html +="<li>"+modifiedDate+"</li>";
                       html +="</ul>";
