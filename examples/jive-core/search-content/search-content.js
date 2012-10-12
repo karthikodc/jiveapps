@@ -137,7 +137,7 @@ function search() {
                       contentSummary=row.contentSummary;
                       author=row.author.name;
                       modifiedDate=row.modificationDate;
-                      var date = new Date(modifiedDate);
+                      var date = getISOStrict(modifiedDate);
                      likeCount=row.likeCount;
                      type=row.type;
                    html +="<ul>";
