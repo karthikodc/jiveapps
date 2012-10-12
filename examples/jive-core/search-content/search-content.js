@@ -58,9 +58,9 @@ function search() {
                      likeCount=row.likeCount;
                      type=row.type;
                      html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
+                     html +="<ul>";
                      
                   
                }
@@ -78,9 +78,9 @@ function search() {
                      likeCount=row.likeCount;
                      type=row.type;
                    html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
+                     html +="<ul>";
                   
                }
             });
@@ -96,10 +96,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
-                    html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
+                   html +="<ul>";
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
+                     html +="<ul>";
                   
                }
             });
@@ -115,10 +115,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
+                    html +="<ul>";
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
                      html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
                }
             });
             html +="<hr>";
@@ -132,10 +132,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
+                    html +="<ul>";
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
                      html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
                }
             });
             html +="<hr>";
@@ -149,10 +149,10 @@ function search() {
                       modifiedDate=row.modificationDate;
                      likeCount=row.likeCount;
                      type=row.type;
+                    html +="<ul>";
+                     html +="<li>"+type+"</li>";
+                     html +="<li>"+subject+"</li>";
                      html +="<ul>";
-                     html +="<li>"+type+"</li>
-                     html +="<li>"+subject+"</li>
-                     html +="<ul>"
                }
             });
             html +="<hr>";
