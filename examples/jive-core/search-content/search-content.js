@@ -118,7 +118,7 @@ function search() {
                      avatar=row.author.avatarURL;
                      username=row.author.username;
                     html +='<ul>';
-                     html +='<li><img src="discussion.png"/> </li>';
+                     html +='<li class="discussion"/>';
                      html +='<li><a href="'+url+'">'+subject+'</a></li>';
                      html +='</ul>';
                      html +='<ul>';
